@@ -42,10 +42,12 @@ html {
 
 .container {
     max-width: 1000px;
-    height:1000px;
+    height:100%;
     position: relative;
     margin: 50px auto;
     padding: 20px 50px;
+    background-color: #fff;
+    
   
 }
 .featured-image{
@@ -67,12 +69,16 @@ html {
 }
 
 .main-title {
+    /* Estou aqui usando um gradiente para deixar apenas no titulo */
     font-size: 60px;
-    color: red;
+    background-image: linear-gradient(to right, rgba(255, 0, 21, 0.941), rgba(255, 6, 6, 0.267));
+    -webkit-background-clip: text;
+    color:transparent;
 }
 
 .main-paragraph{
     font-style: italic;
+
 }
 
 .biography-container{
@@ -80,11 +86,11 @@ html {
     margin: 25px 0;
     border-top: 1px dashed #000000;
     border-bottom: 1px dashed #000000;
-    background-color: #fff;
+    
 }
 
 .quoter-container, .quote-container{
-    background-color: #fff;
+    
     padding: 30px;
 
 }
@@ -103,7 +109,7 @@ html {
     margin: 25px 0;
     border-top: 1px dashed #000000;
     border-bottom: 1px dashed #000000;
-    background-color: #fff;
+    
 }
 
 .curiosidades-container li{
