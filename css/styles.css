@@ -16,24 +16,30 @@ html {
     margin: 0 ;
     padding: 0;
     list-style: none;
+    justify-content: flex-start;
 }
 
 .header-menu img{
     display: block;
+    left:0;
+    margin-right: 10%;
     
 }
+.header-menu a{
+    list-style: none;
+}
 
-.header-menu span{
+.header-menu a {
     color: rgb(250, 250, 250);
-    display: inline-block;
+    text-decoration: none; /* Remove o sublinhado do link */
     padding: 3%;
-    margin-left: 10%;
+    margin-right: 7%;
     font-weight: 600;
     position: relative;
-    
 }
 
-.header-menu span:hover{
+
+.header-menu a:hover{
     border-bottom: 3px solid red;
     top:0;
     padding-bottom: 7px;
@@ -58,6 +64,10 @@ html {
     width: 100%;
     height:100%;
     object-fit: cover;
+}
+
+.featured-image figcaption{
+    font-style: italic;
 }
 
 .bold{
@@ -87,6 +97,10 @@ html {
     border-top: 1px dashed #000000;
     border-bottom: 1px dashed #000000;
     
+}
+
+.history-container{
+    background-color: #fff;
 }
 
 .quoter-container, .quote-container{
@@ -120,4 +134,23 @@ html {
 .img-bold {
     font-weight: bold;
     text-align: center;
+}
+
+.footer{
+    width:100%;
+    height:10%;
+    max-height: 15%;
+    display: flex;
+    background-image: radial-gradient(circle, #000000, #ff0000);
+    background-color: black;
+    bottom:0;
+    left:0;
+    margin: 0 ;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-start;
+}
+.footer p{
+    color: #fff;
+    margin-left: 40%;
 }
